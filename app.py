@@ -1085,18 +1085,7 @@ def not_found(e):
 @app.errorhandler(500)
 def server_error(e):
     write_log(f"SERVER ERROR: {str(e)}")
-    content = """
-<div style="text-align:center;padding:60px 20px;">
-  <div style="font-size:64px;margin-bottom:16px;">⚠️</div>
-  <div style="font-family:var(--mono);font-size:48px;color:var(--danger);margin-bottom:8px;">500</div>
-  <div style="font-size:18px;font-weight:700;color:#fff;margin-bottom:8px;">Server Error</div>
-  <div style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:28px;">// An internal error occurred — it has been logged</div>
-  <a href="/dashboard" class="btn btn-primary">🏠 &nbsp;Back to Dashboard</a>
-</div>"""
-    if "username" in session:
-        return page_shell(content), 500
-    return content, 500
-
+    return str(e)
 # ─────────────────────────────────────────────
 # ENTRY POINT
 # ─────────────────────────────────────────────
