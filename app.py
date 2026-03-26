@@ -10,7 +10,6 @@ from flask import (Flask, request, session, redirect, url_for,
 
 app = Flask(__name__)
 app.secret_key = "authshield-secret-key-change-in-production"
-init_db()
 # Anchor all file paths to the script's directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH  = os.path.join(BASE_DIR, "users.db")
