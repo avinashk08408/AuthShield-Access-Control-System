@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.secret_key = "authshield-secret-key-change-in-production"
 # Anchor all file paths to the script's directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH  = os.path.join(BASE_DIR, "users.db")
+DATABASE_URL = os.environ.get("DATABASE_URL", "")
 LOG_PATH = os.path.join(BASE_DIR, "logs.txt")
 
 # Keep session alive for 7 days — survives mobile browser backgrounding
