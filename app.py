@@ -10,7 +10,7 @@ from flask import (Flask, request, session, redirect, url_for,
                    get_flashed_messages, flash, send_file)
 
 app = Flask(__name__)
-app.secret_key = "authshield-secret-key-change-in-production"
+app.secret_key = os.environ.get("SECRET_KEY", "dev-key")
 # Anchor all file paths to the script's directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
