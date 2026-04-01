@@ -1,5 +1,4 @@
-import psycopg2
-import psycopg2.extras
+import sqlite3
 import hashlib
 import datetime
 import re
@@ -13,7 +12,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-key")
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 LOG_PATH  = os.path.join(BASE_DIR, "logs.txt")
-DATABASE_URL = os.environ.get("DATABASE_URL", "")
+DB_PATH = os.path.join(BASE_DIR, "users.db")
 
 app.config["PERMANENT_SESSION_LIFETIME"] = datetime.timedelta(days=7)
 app.config["SESSION_PERMANENT"] = True
@@ -22,7 +21,8 @@ app.config["SESSION_PERMANENT"] = True
 # DATABASE
 # ─────────────────────────────────────────────
 def get_db():
-    conn = psycopg2.connect(DATABASE_URL)
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
     return conn
 
 def init_db():
@@ -40,10 +40,10 @@ def init_db():
         )
     """)
     conn.commit()
-    cur.execute("SELECT 1 FROM users WHERE username=%s", ("admin",))
+    cur.execute("SELECT 1 FROM users WHERE username=?", ("admin",))
     if not cur.fetchone():
         cur.execute(
-            "INSERT INTO users VALUES (%s,%s,%s,%s,%s,%s,%s)",
+            "INSERT INTO users VALUES (?,?,?,?,?,?,?)",
             ("admin", hash_password("Admin@123"), "Admin", 0, 0,
              str(datetime.datetime.now()), "Never")
         )
@@ -54,8 +54,8 @@ def init_db():
 
 def get_user(username):
     conn = get_db()
-    cur  = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-    cur.execute("SELECT * FROM users WHERE username=%s", (username,))
+    cur  = conn.cursor()
+    cur.execute("SELECT * FROM users WHERE username=?", (username,))
     user = cur.fetchone()
     cur.close()
     conn.close()
@@ -778,7 +778,7 @@ def create_user():
                     conn.commit()
                     write_log(f"{session['username']} created user '{new_user}' ({new_role})")
                     flash(f"User '{new_user}' created successfully", "success")
-                except psycopg2.errors.UniqueViolation:
+                except sqlite3.IntegrityError:
                     flash("Username already exists", "error")
                 finally:
                     cur.close()
