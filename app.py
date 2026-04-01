@@ -13,6 +13,7 @@ app.secret_key = os.environ.get("SECRET_KEY", "dev-key")
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 LOG_PATH  = os.path.join(BASE_DIR, "logs.txt")
 DB_PATH = os.path.join(BASE_DIR, "users.db")
+init_db()
 
 app.config["PERMANENT_SESSION_LIFETIME"] = datetime.timedelta(days=7)
 app.config["SESSION_PERMANENT"] = True
@@ -535,7 +536,7 @@ def login():
             prev_login = user["last_login"]
             conn = get_db()
             cur  = conn.cursor()
-            cur.execute("UPDATE users SET failed=0, last_login=%s WHERE username=%s",
+            cur.execute("UPDATE users SET failed=0, last_login=? WHERE username=?",
                         (str(datetime.datetime.now()), username))
             conn.commit()
             cur.close()
@@ -552,14 +553,14 @@ def login():
             conn = get_db()
             cur  = conn.cursor()
             if failed >= 4 and user["role"] != "Admin":
-                cur.execute("UPDATE users SET failed=%s, locked=1 WHERE username=%s", (failed, username))
+                cur.execute("UPDATE users SET failed=?, locked=1 WHERE username=?", (failed, username))
                 conn.commit()
                 cur.close()
                 conn.close()
                 write_log(f"{username} account locked after {failed} failed attempts")
                 flash("Account locked - too many failed attempts. Contact admin.", "error")
             else:
-                cur.execute("UPDATE users SET failed=%s WHERE username=%s", (failed, username))
+                cur.execute("UPDATE users SET failed=? WHERE username=?", (failed, username))
                 conn.commit()
                 cur.close()
                 conn.close()
@@ -668,7 +669,7 @@ def change_password():
             else:
                 conn = get_db()
                 cur  = conn.cursor()
-                cur.execute("UPDATE users SET password=%s WHERE username=%s",
+                cur.execute("UPDATE users SET password=? WHERE username=?",
                             (hash_password(new), session["username"]))
                 conn.commit()
                 cur.close()
@@ -772,7 +773,7 @@ def create_user():
                 conn = get_db()
                 cur  = conn.cursor()
                 try:
-                    cur.execute("INSERT INTO users VALUES (%s,%s,%s,%s,%s,%s,%s)",
+                    cur.execute("INSERT INTO users VALUES (?,?,?,?,?,?,?)",
                                 (new_user, hash_password(new_pass), new_role,
                                  0, 0, str(datetime.datetime.now()), "Never"))
                     conn.commit()
@@ -825,7 +826,7 @@ def edit_user(target):
         else:
             conn = get_db()
             cur  = conn.cursor()
-            cur.execute("UPDATE users SET role=%s WHERE username=%s", (new_role, target))
+            cur.execute("UPDATE users SET role=%s WHERE username=?", (new_role, target))
             conn.commit()
             cur.close()
             conn.close()
