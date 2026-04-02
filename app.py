@@ -13,7 +13,6 @@ app.secret_key = os.environ.get("SECRET_KEY", "dev-key")
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 LOG_PATH  = os.path.join(BASE_DIR, "logs.txt")
 DB_PATH = os.path.join(BASE_DIR, "users.db")
-init_db()
 
 app.config["PERMANENT_SESSION_LIFETIME"] = datetime.timedelta(days=7)
 app.config["SESSION_PERMANENT"] = True
