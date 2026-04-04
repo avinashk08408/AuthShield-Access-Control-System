@@ -1009,8 +1009,8 @@ def server_error(e):
 # ─────────────────────────────────────────────
 # ENTRY POINT
 # ─────────────────────────────────────────────
+init_db()
 if __name__ == "__main__":
-    init_db()
     print("\n" + "=" * 55)
     print("  AuthShield - Access Control System")
     print("  URL  : http://127.0.0.1:5000")
