@@ -36,7 +36,7 @@ Password: Admin@123<br>
 
 <H1>⚙️ How It Works</H1>
 Login → Verification → Dashboard → Access Control → Monitoring → Logout <br>
-Login → User enters credentials<br>
+<br>Login → User enters credentials<br>
 Verification → System validates account & status<br>
 Dashboard → Personalized interface is loaded <br>
 Access Control → Features enabled based on privileges <br>
