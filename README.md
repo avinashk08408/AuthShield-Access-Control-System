@@ -4,7 +4,7 @@
   
   <H1>🚀 Features</H1>
   <p>
-▸ 🔑 Secure Login & Logout system 
+▸ 🔑 Secure Login & Logout system
 ▸ 👥 Role-Based Access Control (Admin / User)
 ▸ 🛠️ Admin Dashboard to manage users
 ▸ 🔒 Account Locking after multiple failed attempts
