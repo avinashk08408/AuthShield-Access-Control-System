@@ -39,4 +39,7 @@ Password: Admin@123<br>
   ▸ PostgreSQL integration <br>
   ▸ Email verification system <br>
   ▸ API-based authentication <br>
-  
+
+  <H1> 👨‍💻 Author </H1>
+Avinash K
+🔗 GitHub: https://github.com/avinashk08408
