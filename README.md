@@ -45,11 +45,11 @@ Logout → Session cleared securely <br>
 A streamlined flow that ensures controlled access, continuous monitoring, and secure user interaction.
 
 <H1>📸 System Preview</H1>
-Click here👇🏻<br><a href="https://github.com/avinashk08408/AuthShield-Access-Control-System/tree/main/asstes" target= blank>View Screenshots & Demo
-</a>
+
 <p align="center"> Login page 📄 
-  <img src="asstes/login_page.png" height="400" width="300"/>
+  <img src="assets/login_page.png" height="400" width="300"/>
 </p>
+
    <H1>👀 Try it yourself</H1>   
 Click here to view the project👇🏻<a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
 
