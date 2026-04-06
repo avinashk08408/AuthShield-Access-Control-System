@@ -42,6 +42,6 @@ Password: Admin@123<br>
 
   <H1> 👨‍💻 Author </H1>
 Avinash K <br>
-🔗 GitHub: https://github.com/avinashk08408
+🔗 GitHub: https://github.com/avinashk08408<br>
 🔗 Portfolio: https://avinashk08408.github.io<br>
 ⭐ If you found this project helpful, consider giving it a star on GitHub!
