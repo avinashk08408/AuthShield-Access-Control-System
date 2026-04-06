@@ -11,5 +11,26 @@
 <p>▸ 🔓 Unlock locked user accounts (Admin only)</p>
 <p>▸ 📊 Activity Logging system</p>
 
+  <H1>🛠️ Tech Stack</H1>
+<p> ▸ Backend: Python (Flask)</p>
+<p> ▸ Frontend: HTML, CSS</p>
+<p> ▸ Database: SQLite</p>
+<p> ▸ Deployment: Render</p>
+
+<H1>⚙️ Setup & Installation</H1>
+Getting AuthShield running is straightforward.
+1️⃣ Clone the repository
+git clone https://github.com/avinashk08408/AuthShield.git
+cd AuthShield
+2️⃣ Install dependencies
+pip install -r requirements.txt
+3️⃣ Run the application
+python app.py
+4️⃣ Default access
+Username: admin
+Password: Admin@123
+⚠️ Change the credentials after first login.
+
    <H1>👀 Try it yourself</H1>
+   
 <a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
