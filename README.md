@@ -26,10 +26,12 @@ https://github.com/avinashk08408/AuthShield-Access-Control-System <br>
 pip install -r requirements.txt<br>
 3️⃣ Run the application
 python app.py<br>
-4️⃣ Default access
+4️⃣ Default access<br>
 Username: admin
-Password: Admin@123
+Password: Admin@123<br>
 ⚠️ Change the credentials after first login.
+
+
 
    <H1>👀 Try it yourself</H1>
    
