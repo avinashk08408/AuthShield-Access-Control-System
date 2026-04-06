@@ -42,7 +42,10 @@ Dashboard → Personalized interface is loaded <br>
 Access Control → Features enabled based on privileges <br>
 Monitoring → Tracks activity & handles failed attempts <br>
 Logout → Session cleared securely <br>
-A streamlined flow that ensures controlled access, continuous monitoring, and secure user interaction.
+A streamlined flow that ensures controlled access, continuous monitoring, and secure user interaction.<br><br>
+
+> ⚠️ System Note  
+> Running on lightweight SQLite storage — data persistence is not guaranteed in demo environments.
 
 <H1>📸 System Preview</H1>
 
