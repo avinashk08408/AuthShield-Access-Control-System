@@ -48,7 +48,7 @@ A streamlined flow that ensures controlled access, continuous monitoring, and se
 Click here👇🏻<br><a href="https://github.com/avinashk08408/AuthShield-Access-Control-System/tree/main/asstes" target= blank>View Screenshots & Demo
 </a>
 <p align="center">
-  <img src="asstes/login_page.png" width="700"/>
+  <img src="asstes/login_page.png" height="500" width="700"/>
 </p>
    <H1>👀 Try it yourself</H1>   
 Click here to view the project👇🏻<a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
