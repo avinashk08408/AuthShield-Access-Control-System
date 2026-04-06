@@ -44,6 +44,9 @@ Monitoring → Tracks activity & handles failed attempts <br>
 Logout → Session cleared securely <br>
 A streamlined flow that ensures controlled access, continuous monitoring, and secure user interaction.
 
+<H1>📸 System Preview</H1>
+Click here👇🏻<a href="" target= blank></a>
+
    <H1>👀 Try it yourself</H1>   
 Click here to view the project👇🏻<a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
 
@@ -51,7 +54,7 @@ Click here to view the project👇🏻<a href ="https://authshield-access-contro
   ▸ PostgreSQL integration <br>
   ▸ Email verification system <br>
   ▸ API-based authentication <br>
-
+  
   <H1> 👨‍💻 Author </H1>
 Avinash K <br>
 🔗 GitHub: https://github.com/avinashk08408<br>
