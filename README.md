@@ -55,5 +55,5 @@ Click here to view the project👇🏻<a href ="https://authshield-access-contro
   <H1> 👨‍💻 Author </H1>
 Avinash K <br>
 🔗 GitHub: https://github.com/avinashk08408<br>
-🔗 Portfolio: https://avinashk08408.github.io<br>
+🔗 Portfolio: https://avinashk08408.github.io<br><br>
 ⭐ If you found this project helpful, consider giving it a star on GitHub!
