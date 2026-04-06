@@ -47,10 +47,10 @@ A streamlined flow that ensures controlled access, continuous monitoring, and se
 <H1>📸 System Preview</H1>
 
 <p align="center"> Login page 📄 
-  <img src="assets/login_page.png" height="400" width="300"/>
+  <img src="assets/login_page.png" height="400" width="300"/> </p>
   <img src="assets/admin_dashboard.png" height="400" width="300"/>
   <img src="assets/user_dashboard.png" height="400" width="300"/>
-</p>
+
 
    <H1>👀 Try it yourself</H1>   
 Click here to view the project👇🏻<a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
