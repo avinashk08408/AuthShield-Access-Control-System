@@ -41,5 +41,5 @@ Password: Admin@123<br>
   ▸ API-based authentication <br>
 
   <H1> 👨‍💻 Author </H1>
-Avinash K
+Avinash K <br>
 🔗 GitHub: https://github.com/avinashk08408
