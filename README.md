@@ -21,8 +21,8 @@
 Getting AuthShield running is straightforward.
 <p>1️⃣ Clone the repository
 git clone 
-https://github.com/avinashk08408/AuthShield-Access-Control-System-1.git <br>
-cd AuthShield-Access-Control-System-1
+https://github.com/avinashk08408/AuthShield-Access-Control-System.git <br>
+cd AuthShield-Access-Control-System
 <p>2️⃣ Install dependencies
 pip install -r requirements.txt<br>
 3️⃣ Run the application
