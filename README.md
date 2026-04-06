@@ -45,7 +45,7 @@ Logout → Session cleared securely <br>
 A streamlined flow that ensures controlled access, continuous monitoring, and secure user interaction.
 
 <H1>📸 System Preview</H1>
-Click here👇🏻<a href="" target= blank></a>
+Click here👇🏻<a href="https://github.com/avinashk08408/AuthShield-Access-Control-System/tree/main/asstes" target= blank>View Screenshots & Demo</a>
 
    <H1>👀 Try it yourself</H1>   
 Click here to view the project👇🏻<a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
