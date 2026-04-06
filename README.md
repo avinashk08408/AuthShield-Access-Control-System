@@ -27,7 +27,7 @@ pip install -r requirements.txt<br>
 3️⃣ Run the application
 python app.py<br>
 4️⃣ Default access<br>
-Username: admin
+Username: admin<br>
 Password: Admin@123<br>
 ⚠️ Change the credentials after first login.
 
