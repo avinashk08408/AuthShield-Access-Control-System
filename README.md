@@ -47,7 +47,7 @@ A streamlined flow that ensures controlled access, continuous monitoring, and se
 <H1>📸 System Preview</H1>
 
 <p align="center"> Login page 📄 
-  <img src="assets/login_page.png" height="400" width="300"/> </p>
+  <img src="assets/login_page.png" height="300" width="300"/> </p>
   <p align="center"> Admin Dashboard 📃
   <img src="assets/admin_dashboard.png" height="400" width="300"/> </p>
   <p align="center"> User Dashboard 📃
