@@ -31,8 +31,12 @@ Username: admin<br>
 Password: Admin@123<br>
 ⚠️ Change the credentials after first login.
 
-
-
    <H1>👀 Try it yourself</H1>
    
 <a href ="https://authshield-access-control-system-1.onrender.com" target= blank>https://authshield-access-control-system-1.onrender.com</a>
+
+  <H1>📌 Future Enhancements</H1>
+  ▸ PostgreSQL integration <br>
+  ▸ Email verification system <br>
+  ▸ API-based authentication <br>
+  
