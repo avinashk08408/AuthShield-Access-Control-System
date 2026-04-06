@@ -21,14 +21,14 @@ Getting AuthShield running is straightforward.
 <p>1️⃣ Clone the repository
 git clone 
 https://github.com/avinashk08408/AuthShield-Access-Control-System.git <br>
-cd AuthShield-Access-Control-System <br>
+cd AuthShield-Access-Control-System <br><br>
 2️⃣ Install dependencies <br>
-pip install -r requirements.txt<br>
+pip install -r requirements.txt<br><br>
 3️⃣ Run the application <br>
-python app.py<br>
+python app.py<br><br>
 4️⃣ Open in Browser<br>
 Go to:
-http://127.0.0.1:5000<br>
+http://127.0.0.1:5000<br><br>
 5️⃣ Default access<br>
 Username: admin<br>
 Password: Admin@123<br>
