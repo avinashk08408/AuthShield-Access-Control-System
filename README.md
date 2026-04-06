@@ -48,6 +48,8 @@ A streamlined flow that ensures controlled access, continuous monitoring, and se
 
 <p align="center"> Login page 📄 
   <img src="assets/login_page.png" height="400" width="300"/>
+  <img src="assets/admin_dashboard.png" height="400" width="300"/>
+  <img src="assets/user_dashboard.png" height="400" width="300"/>
 </p>
 
    <H1>👀 Try it yourself</H1>   
